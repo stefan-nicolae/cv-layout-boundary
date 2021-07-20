@@ -1,0 +1,80 @@
+:root {
+    --bgColor: #f2ede8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body > .container {
+    display: flex;
+    min-height: 100vh;
+}
+
+aside {
+    width: 300px;
+    height: 100vh;
+    background-color: var(--bgColor);
+    padding: 10px 20px;
+}
+
+aside nav {
+    float: right;
+    font-size: 15px;
+    margin-top: 100px;
+}
+
+aside nav h2 {
+    font-size: 20px;
+    font-weight: normal;
+    cursor: pointer;
+    margin: 15px;
+}
+
+aside nav img {
+    margin-bottom: 30px;
+}
+
+.navSelected {
+    border-bottom: 10px solid #e8e0d8;
+}
+
+
+@media(max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }    
+
+    aside {
+        width: unset;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }    
+    
+    aside img {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }    
+    
+    aside h2 {
+        margin: 5px 0px 0px 15px !important;
+    }    
+
+    aside nav {
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+    }    
+}   
+
+
+
+
+
+

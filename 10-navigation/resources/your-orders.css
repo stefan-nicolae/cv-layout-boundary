@@ -1,0 +1,90 @@
+.your-orders {
+    z-index: 1;
+}
+
+.your-orders section h2, #order-details-link {
+    font-size: 15px;
+    font-weight: normal
+}
+
+.your-orders section > img {
+    background-color: var(--bgColor);
+    height: 400px;
+}
+
+.your-orders .info {
+    margin: 0 20px;
+    margin-right: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.your-orders .info .filler {
+    flex: 1;
+}
+
+.your-orders .info h1 {
+    margin-bottom: 20px;
+}
+
+.your-orders .corner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+}
+
+.your-orders .corner h2 {
+    margin-top: 10px;
+}
+
+.your-orders #order-details-link {
+    cursor: pointer;
+}
+
+.your-orders .bottom {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* display: none; */
+}
+
+.your-orders .bottom > div {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+
+/* squares */
+.your-orders .bottom > div > div {
+    height: 100px;
+    width: 100px;
+    background-color: var(--bgColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.your-orders .bottom img {
+    height: 100%;
+}
+
+@media (max-width: 900px) {
+    .your-orders section {
+        flex-wrap: wrap;
+    }
+
+    .your-orders .info {
+        margin-top: 50px;
+    }
+
+    .your-orders section > img {
+        width: 100%;
+        height: unset;
+    }
+}

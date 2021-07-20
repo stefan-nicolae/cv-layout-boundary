@@ -1,0 +1,32 @@
+/* Page must fit the entire main */
+.page { 
+    position: absolute;
+    min-height: 100vh;
+    width: calc(100% - 300px);
+    padding: 100px 50px;
+    padding-bottom: 0; /* It is useless*/
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title and section are common elements of pages */
+.page .title {
+    font-size: 50px;
+}    
+
+.page section { 
+    display: flex;    
+    max-width: 815px;
+    padding-top: 50px;
+    background-color: white;
+    padding-bottom: 100px;
+}    
+
+@media (max-width: 900px) {
+    .page {
+        padding-top: 20px;
+        min-height: calc(100vh - 150px);
+        width: 100%;
+    }
+}
