@@ -8,10 +8,10 @@
     box-sizing: border-box;    
 }
 
-body > .container {
-    display: flex;
-    position: relative;
+
+.container {
     width: 100%;
+    position: relative;
 }
 
 aside {
@@ -19,6 +19,12 @@ aside {
     height: 100vh;
     background-color: var(--bgColor);
     padding: 10px 20px;
+}
+
+aside > img {
+    position: absolute;
+    width: 200px;
+    left: 30px;
 }
 
 aside nav {
@@ -42,18 +48,14 @@ aside nav img {
     border-bottom: 10px solid #e8e0d8;
 }
 
-main {
-    position: relative;
-}
-
-
 @media(max-width: 900px) {
     .container {
         flex-direction: column;
     }    
 
     main {
-        min-height: calc(100vh - 150px);
+        top: 150px;
+        left: 0;
     }
 
     aside {
@@ -63,8 +65,12 @@ main {
         flex-direction: column;
         position: relative;
     }    
+
+    aside > img {
+        top: 100px;
+    }
     
-    aside img {
+    aside nav img {
         position: absolute;
         top: 5px;
         right: 5px;

@@ -1,15 +1,15 @@
-/* Page must fit the entire main */
 .page { 
     position: absolute;
     top: 0;
-    left: 0;
+    left: 300px;
+    right: 0;
+    bottom: 0;
     width: calc(100vw - 300px);
     padding: 100px 50px;
     padding-bottom: 0; /* It is useless*/
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 100%;
 }
 
 /* Title and section are common elements of pages */
@@ -22,7 +22,6 @@
     max-width: 900px;
     padding-top: 50px;
     background-color: white;
-    padding-bottom: 100px;
 }    
 
 
@@ -30,5 +29,7 @@
     .page {
         padding-top: 20px;
         width: 100%;
+        top: 150px;
+        left: 0;
     }
 }
