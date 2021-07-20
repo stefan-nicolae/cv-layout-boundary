@@ -10,7 +10,8 @@
 
 body > .container {
     display: flex;
-    min-height: 100vh;
+    position: relative;
+    width: 100%;
 }
 
 aside {
@@ -41,11 +42,19 @@ aside nav img {
     border-bottom: 10px solid #e8e0d8;
 }
 
+main {
+    position: relative;
+}
+
 
 @media(max-width: 900px) {
     .container {
         flex-direction: column;
     }    
+
+    main {
+        min-height: calc(100vh - 150px);
+    }
 
     aside {
         width: unset;

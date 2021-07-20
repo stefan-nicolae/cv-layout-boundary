@@ -11,7 +11,7 @@ document.querySelectorAll("aside nav h2").forEach(e => {
         //set page
         pageReset();
         let pageIndex = this.innerHTML.replace(" ", "-").toLowerCase();
-        document.querySelector("aside nav img").src = "/assets/logo-" + 
+        document.querySelector("aside nav img").src = "./assets/logo-" + 
         logo[pageIndex.replace("-", "_")] + ".png";
         document.querySelector('.' + pageIndex).style.zIndex = "1";
         //set menu

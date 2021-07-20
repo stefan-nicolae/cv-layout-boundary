@@ -1,5 +1,5 @@
 .your-orders {
-    z-index: 1;
+    z-index: 1;   
 }
 
 .your-orders section h2, #order-details-link {
@@ -9,7 +9,7 @@
 
 .your-orders section > img {
     background-color: var(--bgColor);
-    height: 400px;
+    max-height: 400px;
 }
 
 .your-orders .info {
@@ -85,6 +85,6 @@
 
     .your-orders section > img {
         width: 100%;
-        height: unset;
+        max-height: unset;
     }
 }
