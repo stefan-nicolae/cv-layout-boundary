@@ -15,11 +15,13 @@ body {
 .container {
     position: relative;
     min-height: 100vh;
+    height: 800px;
 }
 
 aside {
     width: 300px;
-    height: 100vh;
+    min-height: 100vh;
+    height: 800px;
     background-color: var(--bgColor);
     padding: 10px 20px;
 }
@@ -53,8 +55,8 @@ aside nav img {
 
 @media(max-width: 900px) {
     .container {
-        flex-direction: column;
         overflow-x: unset;
+        height: 1500px;
     }    
 
     main {
@@ -67,11 +69,10 @@ aside nav img {
         height: 150px;
         display: flex;
         flex-direction: column;
-        position: relative;
     }    
 
     aside > img {
-        top: 100px;
+        top: 110px;
     }
     
     aside nav img {
