@@ -8,10 +8,13 @@
     box-sizing: border-box;    
 }
 
+body {
+    overflow-x: hidden;
+}
 
 .container {
-    width: 100%;
     position: relative;
+    min-height: 100vh;
 }
 
 aside {
@@ -51,6 +54,7 @@ aside nav img {
 @media(max-width: 900px) {
     .container {
         flex-direction: column;
+        overflow-x: unset;
     }    
 
     main {
