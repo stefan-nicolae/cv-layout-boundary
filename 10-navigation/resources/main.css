@@ -1,5 +1,7 @@
 :root {
     --bgColor: #f2ede8;
+    --containerHeight: 1500px; /*mobile*/
+    --asideHeight: 800px; /*desktop*/
 }
 
 * {
@@ -21,7 +23,7 @@ body {
 aside {
     width: 300px;
     min-height: 100vh;
-    height: 800px;
+    height: var(--asideHeight);
     background-color: var(--bgColor);
     padding: 10px 20px;
 }
@@ -56,7 +58,7 @@ aside nav img {
 @media(max-width: 900px) {
     .container {
         overflow-x: unset;
-        height: 1500px;
+        height: var(--containerHeight);
     }    
 
     main {

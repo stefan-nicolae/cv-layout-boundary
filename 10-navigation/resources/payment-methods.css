@@ -1,3 +1,58 @@
 .payment-methods {
 
 }
+
+/*individual cards*/
+.payment-methods .row > div {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/*all card images*/
+.payment-methods img {
+    height: 150px;
+}
+
+/*last card*/
+.payment-methods .row:last-of-type > div:last-of-type {
+    background-color: var(--bgColor);
+    position: relative;
+}
+
+
+/*add card text*/
+.payment-methods .row:last-of-type div h2 {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/*plus sign*/
+.payment-methods .plus {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.add-card {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+@media (max-width: 900px) {
+    .payment-methods section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .payment-methods img {
+        width: 100%;
+        height: unset;
+    }
+}

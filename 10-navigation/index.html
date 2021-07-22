@@ -10,7 +10,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./resources/main.css">
     <link rel="stylesheet" type="text/css" href="./resources/page.css">
-    <link rel="stylesheet" type="text/css" href="./resources/order-details">
+    <link rel="stylesheet" type="text/css" href="./resources/order-details.css">
     <link rel="stylesheet" type="text/css" href="./resources/your-orders.css">
     <link rel="stylesheet" type="text/css" href="./resources/reward-status.css">
     <link rel="stylesheet" type="text/css" href="./resources/account-settings.css">
@@ -29,10 +29,56 @@
                 <h2 id="sign-out">Sign Out</h2>
             </nav>
         </aside>
-        <div class="page order-details"></div>
+
+
+        <div class="page order-details">
+            <div class="title">Order<br>Details
+                <h3>Your Orders/Order #30002</h3>
+            </div>
+            <section>
+                <div>
+                    <h2>Billing</h2>
+                    <div class="column">
+                        <div>
+                            <h2>Rally Interactive</h2>
+                            <h2>244 W 300 N</h2>
+                            <h2>Salt Lake City, Utah 84103</h2>
+                            <h2>United States</h2>
+                            <h2>(801) 643-3595</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <h2>Payment Status:</h2>
+                            <h2>Refunded</h2>
+                            <h3>Order<br>Cancelled</h3>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>Shipping</h2>
+                    <div class="column">
+                        <div>
+                            <h2>Rally Interactive</h2>
+                            <h2>244 W 300 N</h2>
+                            <h2>Salt Lake City, Utah 84103</h2>
+                            <h2>United States</h2>
+                            <h2>(801) 643-3595</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <h2>Payment Status:</h2>
+                            <h2>Unfulfilled</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
         <div class="page your-orders">
             <!-- title -->
-            <h1 class="title">Your <br>Orders</h1>
+            <h1 class="title">Your<br>Orders</h1>
             <!-- box under the title -->
             <section>
                 <!-- main image -->
@@ -71,9 +117,10 @@
                     </div>
             </section>
         </div>
+
         <div class="page reward-status">
             <!-- title -->
-            <h1 class="title">Reward<br> Status</h1>
+            <h1 class="title">Reward<br>Status</h1>
             <!-- box under the title -->
             <section>
                 <div>
@@ -100,6 +147,8 @@
                         <div>
                             <h2>$ 321.68</h2>
                             <h2>To Gold Status</h2>
+                        </div>
+                        <div>
                             <h2>007</h2>
                             <h2>Referrals</h2>
                         </div>
@@ -112,8 +161,38 @@
                 </div>
             </section>
         </div>
-        <div class="page account-settings"></div>
-        <div class="page payment-methods"></div>
+
+        <div class="page account-settings">
+            
+        </div>
+
+        <div class="page payment-methods">
+            <h1 class="title">Payment<br>Methods</h1>
+            <section>
+                <div class="row">
+                    <div>
+                        <img src="assets/card-1.png">
+                    </div>
+                    <div>
+                        <img src="assets/card-2.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <img src="assets/card-3.png">
+                    </div>
+                    <div>
+                        <img style="opacity: 0;"src="assets/card-3.png">
+                        <div class="add-card">
+                            <h2>ADD CARD</h2>
+                            <img class="plus" src="assets/icon-plus.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
     </div>
     <script src="./resources/main.js" type="text/javascript"></script>
 </body>

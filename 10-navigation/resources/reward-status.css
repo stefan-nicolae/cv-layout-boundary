@@ -4,31 +4,37 @@
 /* Contains Activity and Benefits */
 .reward-status section {
     flex-direction: column;
-    justify-content: space-between;
 }
 
 /* Activity and Benefits */
 .reward-status section > div {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     height: 100%;
 }
 
+.reward-status .column, .reward-status section > div > h2 {
+    width: 300px;
+}
+
 /*Benefits */
 .reward-status section > div:last-of-type {
-    max-width: 600px;
     margin-top: 50px;
 }
 
 .reward-status section img {
     height: 60px;
     width: 60px;
+    margin-right: 130px;
+}
+
+.reward-status .column > div h2:last-of-type {
+    font-size: 20px;
+    margin-bottom: 40px;
 }
 
 @media(max-width: 900px) {
     .reward-status section > div {
-        align-items: center;
         flex-direction: column;
     }
 
@@ -36,5 +42,7 @@
         margin-bottom: 40px;
     }
 
-
+    .reward-status section img {
+        margin-right: 0;
+    }
 }

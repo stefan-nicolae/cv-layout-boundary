@@ -31,6 +31,6 @@ document.querySelectorAll("aside nav h2").forEach(e => {
 });    
             
 document.querySelector("#order-details-link").addEventListener("click", function() {
-    this.style.zIndex = "1";
     pageReset();
+    document.querySelector(".order-details").style.zIndex = "1";
 })
