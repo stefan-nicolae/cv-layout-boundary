@@ -10,7 +10,7 @@
 .order-details .title h3 {
     position: absolute;
     top: -10px;
-    font-size: 10px;
+    font-size: var(--smallFont);
     font-weight: normal;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .order-details .column {
-    font-size: 10px;
+    font-size: var(--smallFont);
 }
 
 .order-details .column h2 {
@@ -41,7 +41,7 @@
 }
 
 .order-details h3 {
-    font-size: 30px;
+    font-size: var(--strongerFont);
     position: absolute;
     top: 120px;
 }

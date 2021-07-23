@@ -2,6 +2,10 @@
     --bgColor: #f2ede8;
     --containerHeight: 1500px; /*mobile*/
     --asideHeight: 800px; /*desktop*/
+    /*Font Size*/
+    --strongerFont: 25px; /*lavender*/
+    --mainFont: 20px; /*blue*/
+    --smallFont: 12px; /*orange*/
 }
 
 * {
@@ -20,31 +24,51 @@ body {
     height: 800px;
 }
 
+.container > nav {
+    position: fixed;
+    top: 10px;
+    right: 25px;
+    z-index: 100;
+}
+
+.container > nav a {
+    font-size: var(--mainFont);
+    text-decoration: none;
+    color: black;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
 aside {
     width: 300px;
     min-height: 100vh;
     height: var(--asideHeight);
     background-color: var(--bgColor);
     padding: 10px 20px;
+    z-index: 90;
 }
 
 aside > img {
-    position: absolute;
+    position: fixed;
     width: 200px;
     left: 30px;
 }
 
 aside nav {
     float: right;
-    font-size: 15px;
     margin-top: 100px;
 }
 
 aside nav h2 {
-    font-size: 20px;
+    font-size: var(--mainFont);
     font-weight: normal;
     cursor: pointer;
+    font-weight: bold;
     margin: 15px;
+}
+
+aside nav .aside-menu .iconify {
+    display: none;
 }
 
 aside nav img {
@@ -61,38 +85,58 @@ aside nav img {
         height: var(--containerHeight);
     }    
 
-    main {
-        top: 150px;
-        left: 0;
-    }
-
     aside {
-        width: unset;
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-    }    
+        min-height: unset;
+        height: 100px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+    }
 
+    /*Boundary*/
     aside > img {
-        top: 110px;
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
     }
     
-    aside nav img {
+    aside > nav img {
         position: absolute;
-        top: 5px;
-        right: 5px;
-    }    
-    
-    aside h2 {
-        margin: 5px 0px 0px 15px !important;
-    }    
+        right: 30px;
+        top: 40px;
+    }
 
-    aside nav {
+    aside > nav {
+        position: absolute;
+        top: 0px;
         margin-top: 0;
-        display: flex;
-        flex-wrap: wrap;
-        width: 80%;
-    }    
+        width: 100%;
+    }
+
+    aside nav .aside-menu {
+        position: absolute;
+        top: 10px; 
+        left: -5px;
+        width: 100px;
+    }
+
+    aside nav .aside-menu .iconify {
+        font-size: 40px;
+        display: block;
+    }
+
+    aside nav .aside-menu .dropdown-menu {
+        display: none;
+    }
+
+    aside nav .aside-menu:hover .dropdown-menu {
+        display: block;
+        background-color: var(--bgColor);
+        width: 100%;
+        padding: 10px 0px;
+    }
+
 }   
 
 

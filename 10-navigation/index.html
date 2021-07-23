@@ -15,22 +15,36 @@
     <link rel="stylesheet" type="text/css" href="./resources/reward-status.css">
     <link rel="stylesheet" type="text/css" href="./resources/account-settings.css">
     <link rel="stylesheet" type="text/css" href="./resources/payment-methods.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 <body>
     <div class="container">
+        <nav>
+            <a href="#">SHOP</a>
+            <a href="#"><span class="iconify" data-icon="akar-icons:search" data-inline="false"></span></a>
+            <a href="#"><span class="iconify" data-icon="akar-icons:cart" data-inline="false"></span></a>
+            <a href="#"><span class="iconify" data-icon="eva:log-out-outline" data-inline="false"></span></a>
+        </nav>
+
         <aside>
             <img src="assets/logo-boundary.png">
             <nav>
                 <img src="./assets/logo-vip.png">
-                <h2 class="navSelected">Your Orders</h2>
-                <h2>Reward Status</h2>
-                <h2>Account Settings</h2>
-                <h2>Payment Methods</h2>
-                <h2 id="sign-out">Sign Out</h2>
+                <div class="aside-menu">
+                    <span class="iconify" data-icon="ant-design:menu-outlined" data-inline="false"></span>
+                    <div class="dropdown-menu">
+                        <h2 class="navSelected">Your Orders</h2>
+                        <h2>Reward Status</h2>
+                        <h2>Account Settings</h2>
+                        <h2>Payment Methods</h2>
+                        <h2 id="sign-out">Sign Out</h2>
+                    </div>
+                </div>
             </nav>
         </aside>
 
 
+        <!-- Pages -->
         <div class="page order-details">
             <div class="title">Order<br>Details
                 <h3>Your Orders/Order #30002</h3>
@@ -163,6 +177,7 @@
         </div>
 
         <div class="page account-settings">
+            <h1 class="title"></h1>
             
         </div>
 

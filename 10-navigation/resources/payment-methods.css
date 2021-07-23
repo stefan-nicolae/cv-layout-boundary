@@ -22,7 +22,7 @@
 
 /*add card text*/
 .payment-methods .row:last-of-type div h2 {
-    font-size: 15px;
+    font-size: var(--mainFont);
     margin-top: 10px;
 }
 
@@ -37,11 +37,11 @@
 .add-card {
     position: absolute;
     top: 25%;
-    left: 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
 }
 
 
@@ -52,7 +52,11 @@
     }
 
     .payment-methods img {
-        width: 100%;
+        width: 300px;
         height: unset;
+    }
+
+    .payment-methods .row:last-of-type div {
+        width: 300px;
     }
 }

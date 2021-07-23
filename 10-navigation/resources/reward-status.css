@@ -28,8 +28,15 @@
     margin-right: 130px;
 }
 
+.reward-status section h2 {
+    font-size: var(--mainFont);
+}
+
+.reward-status .column > div h2:first-of-type {
+    font-size: var(--strongerFont);
+}
+
 .reward-status .column > div h2:last-of-type {
-    font-size: 20px;
     margin-bottom: 40px;
 }
 
