@@ -1,6 +1,6 @@
 :root {
     --bgColor: #f2ede8;
-    --containerHeight: 1500px; /*mobile*/
+    --containerHeight: 1800px; /*mobile*/
     --asideHeight: 800px; /*desktop*/
     /*Font Size*/
     --strongerFont: 25px; /*lavender*/
@@ -14,21 +14,36 @@
     box-sizing: border-box;    
 }
 
-body {
+html {
     overflow-x: hidden;
 }
 
 .container {
     position: relative;
     min-height: 100vh;
-    height: 800px;
+    height: var(--asideHeight);
+    
+}
+
+.announce {
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    z-index: 4;
+    position: fixed;
+    top:0;
+    height: 30px;
+    font-size: var(--smallFont);
+    padding-top: 2px;
 }
 
 .container > nav {
     position: fixed;
-    top: 10px;
+    top: 50px;
     right: 25px;
-    z-index: 100;
+    z-index: 4;
+    top: 40px;
 }
 
 .container > nav a {
@@ -45,13 +60,14 @@ aside {
     height: var(--asideHeight);
     background-color: var(--bgColor);
     padding: 10px 20px;
-    z-index: 90;
+    z-index: 3;
 }
 
 aside > img {
     position: fixed;
     width: 200px;
     left: 30px;
+    top: 40px;
 }
 
 aside nav {
@@ -89,7 +105,7 @@ aside nav img {
         min-height: unset;
         height: 100px;
         width: 100%;
-        top: 0;
+        top: 30px;
         left: 0;
         position: fixed;
     }
@@ -99,6 +115,7 @@ aside nav img {
         position: absolute;
         bottom: 10px;
         left: 20px;
+        top: 60px;
     }
     
     aside > nav img {
