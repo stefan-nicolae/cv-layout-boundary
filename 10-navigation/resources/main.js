@@ -1,6 +1,7 @@
 const mobileQuery = 900;
 
 //Handle the page changes
+// foarte frumos!! bravo!!
 const logo = {
     your_orders: "vip",
     reward_status: "gold",
