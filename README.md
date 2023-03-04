@@ -1,3 +1,3 @@
 # Boundary
 
-https://stefan-nicolae.github.io/Boundary/
+https://stefan-nicolae.github.io/cv-layout-boundary/
