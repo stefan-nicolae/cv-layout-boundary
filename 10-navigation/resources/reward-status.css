@@ -1,13 +1,7 @@
-.reward-status {
- 
-}
-
-/* Contains Activity and Benefits */
 .reward-status section {
     flex-direction: column;
 }
 
-/* Activity and Benefits */
 .reward-status .row {
     display: flex;
     width: 100%;

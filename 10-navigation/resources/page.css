@@ -6,13 +6,12 @@
     bottom: 0;
     width: calc(100vw - 300px);
     padding: 100px 50px;
-    padding-bottom: 0; /* It is useless*/
+    padding-bottom: 0; 
     display: flex;
     flex-direction: column;
     background-color: white;
 }
 
-/* Title and section are common elements of pages */
 .page .title {
     font-size: 50px;
 }    

@@ -1,32 +1,22 @@
-.payment-methods {
-
-}
-
-/*individual cards*/
 .payment-methods .row > div {
     margin-right: 20px;
     margin-bottom: 10px;
 }
 
-/*all card images*/
 .payment-methods img {
     height: 150px;
 }
 
-/*last card*/
 .payment-methods .row:last-of-type > div:last-of-type {
     background-color: var(--bgColor);
     position: relative;
 }
 
-
-/*add card text*/
 .payment-methods .row:last-of-type div h2 {
     font-size: var(--mainFont);
     margin-top: 10px;
 }
 
-/*plus sign*/
 .payment-methods .plus {
     width: 30px;
     height: 30px;

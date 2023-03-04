@@ -1,12 +1,7 @@
-.account-settings {
-
-}
-
 .account-settings section {
     flex-direction: column;
 }
 
-/*size of all the text*/
 .account-settings section > h2, 
 .account-settings form > h2, 
 .account-settings button, 
@@ -15,12 +10,10 @@
     font-size: var(--mainFont);
 }
 
-/*contains the black address cards*/
 .account-settings .addresses {
     display: flex;
 }
 
-/*width of all the elements is the same*/
 .account-settings input,
 .account-settings .addresses > div,
 .account-settings form button {
@@ -29,7 +22,6 @@
     margin-bottom: 20px;
 }
 
-/*black address cards, margin slightly different here*/
 .account-settings .addresses > div {
     background-color: black;
     color: white;
@@ -53,7 +45,6 @@
     cursor: pointer;
 }
 
-/*Account, Addresses headers*/
 .account-settings section > h2, 
 .account-settings form > h2 {
     margin-bottom: 20px;
