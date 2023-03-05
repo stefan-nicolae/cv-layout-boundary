@@ -147,11 +147,13 @@ aside nav img {
         display: none;
     }
 
-    aside nav .aside-menu:hover .dropdown-menu {
-        display: block;
-        background-color: var(--bgColor);
-        width: 100%;
-        padding: 10px 0px;
+    @media (hover: hover) {
+        aside nav .aside-menu:hover .dropdown-menu {
+            display: block;
+            background-color: var(--bgColor);
+            width: 100%;
+            padding: 10px 0px;
+        }
     }
 }   
 
